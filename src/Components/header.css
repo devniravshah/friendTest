@@ -1,0 +1,33 @@
+.header-main {
+    background-color: #3e50b4;
+    padding: 25px;
+}
+.header-main .header-row {
+    display: flex;
+    justify-content: space-between;
+}
+.header-main .header-row h4 {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+}
+.menu-list .button {
+    padding: 4px 8px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 8px;
+    color: #ffffff;
+    outline: none;
+    border-radius: 0;
+}
+.menu-list {
+    text-align: right;
+}
+.menu-list .button:hover, .menu-list .button.active,
+.menu-list .button.active:hover, .menu-list .button:focus {
+    color: #ffc82c;
+    background-color: transparent;
+    border-bottom: 3px solid #ffc82c;
+}

@@ -1,0 +1,94 @@
+.main-wrap {
+    margin: 30px 20px;
+}
+
+.friend-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.main-wrap .friend-list {
+    width: calc(25% - 20px);
+    margin: 10px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    border: none;
+    position: relative;
+    box-shadow: none;
+}
+.main-wrap .friend-wrap .friend-list:hover {
+    box-shadow: none;
+    border: none;
+}
+.main-wrap .friend-list .friend-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100% !important;
+    overflow: hidden;
+}
+.main-wrap .friend-list .friend-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-wrap .friend-list .content {
+    flex: 1 calc(100% - 80px);
+    background-color: #ced2ea;
+    border-radius: 0 40px 40px 0 !important;
+    border: none;
+    padding-left: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-wrap .friend-list:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: #ced2ea;
+    width: 80px;
+    height: 100%;
+    z-index: -1;
+    border-radius: 40px 0 0 40px;
+}
+
+.main-wrap .friend-list .content .header {
+    font-size: 18px;
+    color: #3e50b4;
+}
+
+.popup-wrap .content {
+    padding-top: 0 !important;
+}
+.popup-wrap .content span {
+    font-size: 16px;
+    color: #3e50b4;
+}
+.popup-wrap .content p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666666;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .main-wrap .friend-list {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .main-wrap .friend-list {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .main-wrap .friend-list {
+        width: 100%;
+    }
+}

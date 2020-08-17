@@ -1,0 +1,109 @@
+.article-section.grid {
+    margin: 0;
+}
+.article-section .article-block-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.article-section .article-block-row .article-block {
+    flex: 50%;
+    max-width: 50%;
+}
+
+.article-block .article {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 20px);
+    width: 100%;
+    box-shadow: none;
+}
+.article-block .column {
+    height: 100%;
+}
+.article-block .article .image {
+    width: 100%;
+    min-height: 400px;
+    height: 400px;
+    border-radius: 6px !important;
+    overflow: hidden;
+}
+.article-block .article .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.article-block .article .articleDetail {
+    width: calc(100% - 90px);
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    position: relative;
+    top: -40px;
+    margin: 0 25px;
+    border-radius: 6px !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)
+}
+
+.article-block .article .articleDetail .content .header span {
+    font-size: 22px;
+    color: #2b3882;
+}
+.article-block .article .articleDetail .content .header span.article-title {
+    margin-left: 10px;
+}
+.article-block .article .articleDetail .content .meta span {
+    font-size: 12px;
+    color: #847c65;
+    margin-right: 6px;
+}
+.article-block .article .articleDetail .content .description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 24px;
+}
+.article-block .article .articleDetail .content .button {
+    background-color: transparent;
+    border:1px solid #3e50b4;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #3e50b4;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+.article-block .article .articleDetail .content .button:hover {
+    background-color: #3e50b4;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 767px){
+    .article-section .article-block-row .article-block {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header-main .header-row {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .header-main .header-row h4 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 15px !important;
+    }
+    .header-main .header-row .column {
+        width: 100% !important;
+    }
+    .header-main .header-row .menu-list {
+        text-align: center;
+    }
+}
